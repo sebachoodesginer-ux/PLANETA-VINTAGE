@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Planeta Vintage</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-header.png" alt="Planeta Vintage">
+            </a>
+            <nav class="nav-desktop">
+                <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+                <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+                <a href="hombre.html" class="btn-menu">HOMBRE</a>
+                <a href="mujer.html" class="btn-menu">MUJER</a>
+            </nav>
+            <button class="menu-mobile" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+            <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+            <a href="hombre.html" class="btn-menu">HOMBRE</a>
+            <a href="mujer.html" class="btn-menu">MUJER</a>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <p>MENÚ/NOSOTROS</p>
+    </div>
+
+    <!-- Nuestro Equipo Section -->
+    <section class="team-section">
+        <h2 class="section-title">NUESTRO EQUIPO</h2>
+        <div class="team-container">
+            <div class="team-image">
+                <img src="imagenes/team-photo.jpg" alt="Equipo Planeta Vintage">
+                <div class="team-description">
+                    <p>Somos un grupo de diseñadores gráficos apasionados por crear y dar vida a ideas únicas. Combinamos creatividad y estrategia para lograr resultados que comunican y generan impacto. Nos inspira cada proyecto y trabajamos juntos para convertir cada idea en algo visualmente inolvidable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quienes Somos Section -->
+    <section class="about-section">
+        <h2 class="section-title">¿QUIENES SOMOS?</h2>
+        <p class="about-text">Planeta Vintage nació de la idea de romper con el fast fashion y darle nueva vida a la ropa. Queremos que la gente se vista chimba, con flow y sin hacerle daño al planeta. Creemos en la moda consciente, en la que cada prenda cuenta una historia. Seguimos firmes con nuestra idea: vestir bien también puede cuidar el mundo.</p>
+        <div class="checkered-divider">
+            <img src="imagenes/checkered-divider.png" alt="">
+        </div>
+    </section>
+
+    <!-- Visión Section -->
+    <section class="vision-section">
+        <div class="vision-content">
+            <div class="vision-text">
+                <h2 class="section-title">VISIÓN</h2>
+                <p>En Planeta Vintage ofrecemos ropa de segunda mano con estilo y personalidad. Promovemos la moda circular dando nueva vida a las prendas y haciendo la sostenibilidad accesible, inspirando a quienes quieren expresarse con piezas únicas y cuidar el planeta.</p>
+            </div>
+            <div class="vision-icon">
+                <img src="imagenes/megaphone.png" alt="Megaphone">
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión Section -->
+    <section class="mission-section">
+        <div class="mission-content">
+            <div class="mission-icon">
+                <img src="imagenes/magnifying-glass.png" alt="Magnifying glass">
+            </div>
+            <div class="mission-text">
+                <h2 class="section-title-white">MISIÓN</h2>
+                <p>Nuestra visión es posicionar a Planeta Vintage como referente en moda circular y estilo alternativo en Colombia, creando una comunidad apasionada por la moda consciente. Buscamos expandirnos con nuevas sucursales y colaboraciones que promuevan la sostenibilidad como estilo de vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contactanos Section -->
+    <section class="contact-info-section">
+        <h2 class="section-title">CONTÁCTANOS</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <img src="imagenes/location-icon.png" alt="Location">
+                <h3>Dirección de la oficina</h3>
+                <p>Cra. 84 #17 - 42, Engativá</p>
+            </div>
+            <div class="contact-item">
+                <img src="imagenes/phone-icon.png" alt="Phone">
+                <h3>Número de contacto</h3>
+                <p>+57 324 596 1367</p>
+            </div>
+            <div class="contact-item">
+                <img src="imagenes/email-icon.png" alt="Email">
+                <h3>Correo electrónico</h3>
+                <p>planetavintage_co@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habla con Nosotros Section -->
+    <section class="contact-form-section">
+        <h2 class="section-title">HABLA CON NOSOTROS</h2>
+        <div class="contact-form-grid">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label>Te llamas:</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Número de teléfono:</label>
+                    <input type="tel" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label>Correo electrónico:</label>
+                    <input type="email" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label>Tu mensaje:</label>
+                    <textarea name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">ENVIAR</button>
+            </form>
+            <div class="contact-image">
+                <img src="imagenes/contact-photo.webp" alt="Contacto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="imagenes/globe-icon.png" alt="Globe" class="globe-decoration">
+            <div class="footer-info">
+                <div class="divider-line"></div>
+                <div class="contact-info">
+                    <h3 class="footer-title">Contacto</h3>
+                    <p>planetavintage.co</p>
+                    <p>+57 324 596 1367</p>
+                    <p>Cra. 84 #17 - 42, Engativá</p>
+                    <div class="social-icons">
+                        <img src="imagenes/tiktok-icon.png" alt="TikTok">
+                        <img src="imagenes/instagram-icon.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                2025 CREADO POR PLANETA VINTAGE
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destacados - Planeta Vintage</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-header.png" alt="Planeta Vintage">
+            </a>
+            <nav class="nav-desktop">
+                <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+                <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+                <a href="hombre.html" class="btn-menu">HOMBRE</a>
+                <a href="mujer.html" class="btn-menu">MUJER</a>
+            </nav>
+            <button class="menu-mobile" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+            <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+            <a href="hombre.html" class="btn-menu">HOMBRE</a>
+            <a href="mujer.html" class="btn-menu">MUJER</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-featured">
+        <img src="imagenes/hero-destacados.webp" alt="Planeta Vintage">
+        <img src="imagenes/logo-planeta-vintage.png" alt="Planeta Vintage Logo" class="hero-logo-overlay">
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <p>INICIO/DESTACADOS</p>
+    </div>
+
+    <!-- Red Wave Section -->
+    <section class="red-wave-section">
+        <h1 class="main-title">DESTACADOS</h1>
+    </section>
+
+    <!-- Products Grid First 3 -->
+    <section class="featured-products-coral">
+        <div class="products-grid">
+            <a href="producto.html?id=1" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/overall-cargo.webp" alt="Overall tipo cargo">
+                </div>
+                <h3 class="product-name">Overall tipo cargo</h3>
+                <div class="price-tag">$ 100.000</div>
+            </a>
+            <a href="producto.html?id=2" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/gorra-customizada.webp" alt="Gorra costumizada">
+                </div>
+                <h3 class="product-name">Gorra costumizada</h3>
+                <div class="price-tag">$ 28.000</div>
+            </a>
+            <a href="producto.html?id=3" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/chaqueta-bomber.webp" alt="Chaqueta crema clásico">
+                </div>
+                <h3 class="product-name">Chaqueta crema clásico</h3>
+                <div class="price-tag">$ 125.000</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Grid Remaining -->
+    <section class="products-section">
+        <div class="products-grid">
+            <a href="producto.html?id=4" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/drill-cuadros-1.webp" alt="Pantalón drill cuadros">
+                </div>
+                <h3 class="product-name">Pantalón drill cuadros</h3>
+                <div class="price-tag">$ 60.000</div>
+            </a>
+            <a href="producto.html?id=5" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/vestido-fiesta-1.webp" alt="Vestido fiesta">
+                </div>
+                <h3 class="product-name">Vestido fiesta</h3>
+                <div class="price-tag">$ 50.000</div>
+            </a>
+            <a href="producto.html?id=6" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/bolso-multibolsillos-1.webp" alt="Mochila multibolsillos">
+                </div>
+                <h3 class="product-name">Mochila multibolsillos</h3>
+                <div class="price-tag">$ 80.000</div>
+            </a>
+            <a href="producto.html?id=7" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/cardigan-blanco-1.webp" alt="cardigan tejido hilo">
+                </div>
+                <h3 class="product-name">cardigan tejido hilo</h3>
+                <div class="price-tag">$ 65.000</div>
+            </a>
+            <a href="producto.html?id=8" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/pantalon-pinzas-1.webp" alt="Pantalón con pinzas semi entubado">
+                </div>
+                <h3 class="product-name">Pantalón con pinzas semi entubado</h3>
+                <div class="price-tag">$ 55.000</div>
+            </a>
+            <a href="producto.html?id=9" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/short-cuadros-1.webp" alt="Short cuadros">
+                </div>
+                <h3 class="product-name">Short cuadros</h3>
+                <div class="price-tag">$ 45.000</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="imagenes/globe-icon.png" alt="Globe" class="globe-decoration">
+            <div class="footer-info">
+                <div class="divider-line"></div>
+                <div class="contact-info">
+                    <h3 class="footer-title">Contacto</h3>
+                    <p>planetavintage.co</p>
+                    <p>+57 324 596 1367</p>
+                    <p>Cra. 84 #17 - 42, Engativá</p>
+                    <div class="social-icons">
+                        <img src="imagenes/tiktok-icon.png" alt="TikTok">
+                        <img src="imagenes/instagram-icon.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                2025 CREADO POR PLANETA VINTAGE
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

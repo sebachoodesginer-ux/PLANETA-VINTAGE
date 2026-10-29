@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hombre - Planeta Vintage</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-header.png" alt="Planeta Vintage">
+            </a>
+            <nav class="nav-desktop">
+                <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+                <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+                <a href="hombre.html" class="btn-menu">HOMBRE</a>
+                <a href="mujer.html" class="btn-menu">MUJER</a>
+            </nav>
+            <button class="menu-mobile" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+            <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+            <a href="hombre.html" class="btn-menu">HOMBRE</a>
+            <a href="mujer.html" class="btn-menu">MUJER</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-category green-yellow-gradient">
+        <h1 class="category-title">TU ESTILO EMPIEZA AQUÍ</h1>
+        <p class="category-description">Explora nuestra colección para hombres: prendas versátiles, cómodas y con toda la actitud que te representa.</p>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="categories-section">
+        <div class="categories-filter">
+            <button class="category-btn active" onclick="filterCategory('all')">TODOS</button>
+            <button class="category-btn" onclick="filterCategory('superior')">SUPERIOR</button>
+            <button class="category-btn" onclick="filterCategory('inferior')">INFERIOR</button>
+            <button class="category-btn" onclick="filterCategory('accesorios')">ACCESORIOS</button>
+        </div>
+    </section>
+
+    <!-- Featured Products with Green Wave Background -->
+    <section class="featured-products-wave green-wave">
+        <div class="products-grid">
+            <a href="producto.html?id=1" class="product-card" data-category="superior">
+                <div class="product-image orange-shadow">
+                    <img src="imagenes/buzo-negro-1.webp" alt="Buzo Capotero Negro Semi-Impermeable">
+                </div>
+                <h3 class="product-name">Buzo Capotero Negro Semi-Impermeable</h3>
+                <div class="price-tag">$55.000</div>
+            </a>
+            <a href="producto.html?id=2" class="product-card" data-category="superior">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/camisa-lenadora-1.webp" alt="Camisa leñadora Levis">
+                </div>
+                <h3 class="product-name">Camisa leñadora Levis</h3>
+                <div class="price-tag">$45.000</div>
+            </a>
+            <a href="producto.html?id=3" class="product-card" data-category="superior">
+                <div class="product-image orange-shadow">
+                    <img src="imagenes/camiseta-coca-cola-1.webp" alt="Camiseta Roja Coca ~ Cola">
+                </div>
+                <h3 class="product-name">Camiseta Roja Coca ~ Cola</h3>
+                <div class="price-tag">$55.000</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Remaining Products -->
+    <section class="products-section">
+        <div class="products-grid">
+            <!-- Prendas Superiores -->
+            <a href="producto.html?id=4" class="product-card" data-category="superior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/chaqueta-crema-clasica.webp" alt="Chaqueta crema clásica">
+                </div>
+                <h3 class="product-name">Chaqueta crema clásica</h3>
+                <div class="price-tag">$125.000</div>
+            </a>
+            <a href="producto.html?id=5" class="product-card" data-category="superior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/chaqueta-deportiva-adidas.webp" alt="Chaqueta deportiva">
+                </div>
+                <h3 class="product-name">Chaqueta deportiva</h3>
+                <div class="price-tag">$85.000</div>
+            </a>
+            <a href="producto.html?id=6" class="product-card" data-category="superior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/chaqueta-drill-beige.webp" alt="Chaqueta en drill beige">
+                </div>
+                <h3 class="product-name">Chaqueta en drill beige</h3>
+                <div class="price-tag">$75.000</div>
+            </a>
+            <a href="producto.html?id=7" class="product-card" data-category="superior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/chaqueta-cremallera-basica.webp" alt="chaqueta cremallera básica">
+                </div>
+                <h3 class="product-name">chaqueta cremallera básica</h3>
+                <div class="price-tag">$75.000</div>
+            </a>
+
+            <!-- Prendas Inferiores -->
+            <a href="producto.html?id=11" class="product-card" data-category="inferior">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/jean-azul-desgastado.webp" alt="Jean azul desgastado nuevo Y2K">
+                </div>
+                <h3 class="product-name">Jean azul desgastado nuevo Y2K</h3>
+                <div class="price-tag">$75.000</div>
+            </a>
+            <a href="producto.html?id=12" class="product-card" data-category="inferior">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/jean-clasico-azul.webp" alt="Jean clásico">
+                </div>
+                <h3 class="product-name">Jean clásico</h3>
+                <div class="price-tag">$75.000</div>
+            </a>
+            <a href="producto.html?id=13" class="product-card" data-category="inferior">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/jean-clasico-negro.webp" alt="Jean clásico negro">
+                </div>
+                <h3 class="product-name">Jean clásico negro</h3>
+                <div class="price-tag">$80.000</div>
+            </a>
+            <a href="producto.html?id=14" class="product-card" data-category="inferior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/cargo-bota-ancha.webp" alt="Pantalón cargo bota ancha">
+                </div>
+                <h3 class="product-name">Pantalón cargo bota ancha</h3>
+                <div class="price-tag">$65.000</div>
+            </a>
+            <a href="producto.html?id=15" class="product-card" data-category="inferior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/pantalon-drill-cuadros.webp" alt="Pantalón drill a cuadros">
+                </div>
+                <h3 class="product-name">Pantalón drill a cuadros</h3>
+                <div class="price-tag">$60.000</div>
+            </a>
+            <a href="producto.html?id=16" class="product-card" data-category="inferior">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/jean clasico azul con roturas.webp" alt="Jean clásico azul con roturas">
+                </div>
+                <h3 class="product-name">Jean clásico azul con roturas</h3>
+                <div class="price-tag">$75.000</div>
+            </a>
+            <a href="producto.html?id=17" class="product-card" data-category="inferior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/pantalon-doble-tono.webp" alt="Pantalón doble tono denim con insertos">
+                </div>
+                <h3 class="product-name">Pantalón doble tono denim con insertos</h3>
+                <div class="price-tag">$95.000</div>
+            </a>
+            <a href="producto.html?id=18" class="product-card" data-category="inferior">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/overall-tipo-cargo.webp" alt="Overall tipo cargo estilo vintage">
+                </div>
+                <h3 class="product-name">Overall tipo cargo estilo vintage</h3>
+                <div class="price-tag">$120.000</div>
+            </a>
+
+            <!-- Accesorios -->
+            <a href="producto.html?id=21" class="product-card" data-category="accesorios">
+                <div class="product-image orange-shadow">
+                    <img src="imagenes/Bolso Victoria (1).webp" alt="Bolso Victoria's Secret terracota Y2K">
+                </div>
+                <h3 class="product-name">Bolso Victoria's Secret terracota Y2K</h3>
+                <div class="price-tag">$80.000</div>
+            </a>
+            <a href="producto.html?id=22" class="product-card" data-category="accesorios">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/Collar burbujas (1).webp" alt="Collar burbujas y estrellas">
+                </div>
+                <h3 class="product-name">Collar burbujas y estrellas</h3>
+                <div class="price-tag">$25.000</div>
+            </a>
+            <a href="producto.html?id=23" class="product-card" data-category="accesorios">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/Collar puas corazon (1).webp" alt="Collar púas con corazón">
+                </div>
+                <h3 class="product-name">Collar púas con corazón</h3>
+                <div class="price-tag">$30.000</div>
+            </a>
+            <a href="producto.html?id=24" class="product-card" data-category="accesorios">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/gorra-customizada.webp" alt="Gorra costumizada">
+                </div>
+                <h3 class="product-name">Gorra costumizada</h3>
+                <div class="price-tag">$28.000</div>
+            </a>
+            <a href="producto.html?id=25" class="product-card" data-category="accesorios">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/Maleta de upcyciling (1).webp" alt="Maleta de upcycling de jean y café">
+                </div>
+                <h3 class="product-name">Maleta de upcycling de jean y café</h3>
+                <div class="price-tag">$176.000</div>
+            </a>
+            <a href="producto.html?id=26" class="product-card" data-category="accesorios">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/Mini bang (1).webp" alt="Mini bag">
+                </div>
+                <h3 class="product-name">Mini bag</h3>
+                <div class="price-tag">$50.000</div>
+            </a>
+            <a href="producto.html?id=27" class="product-card" data-category="accesorios">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/Mochila multibolsillos (1).webp"Mochila multibolsillos">
+                </div>
+                <h3 class="product-name">Mochila multibolsillos</h3>
+                <div class="price-tag">$80.000</div>
+            </a>
+            <a href="producto.html?id=28" class="product-card" data-category="accesorios">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/Portabotellas upcyled (1).webp" alt="Portabotellas upcycled">
+                </div>
+                <h3 class="product-name">Portabotellas upcycled</h3>
+                <div class="price-tag">$70.000</div>
+            </a>
+            <a href="producto.html?id=29" class="product-card" data-category="accesorios">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/Totebag Doble Faz (1).webp" alt="Totebag Doble faz">
+                </div>
+                <h3 class="product-name">Totebag Doble faz</h3>
+                <div class="price-tag">$60.000</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="imagenes/globe-icon.png" alt="Globe" class="globe-decoration">
+            <div class="footer-info">
+                <div class="divider-line"></div>
+                <div class="contact-info">
+                    <h3 class="footer-title">Contacto</h3>
+                    <p>planetavintage.co</p>
+                    <p>+57 324 596 1367</p>
+                    <p>Cra. 84 #17 - 42, Engativá</p>
+                    <div class="social-icons">
+                        <img src="imagenes/tiktok-icon.png" alt="TikTok">
+                        <img src="imagenes/instagram-icon.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                2025 CREADO POR PLANETA VINTAGE
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
