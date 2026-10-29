@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta Vintage - Moda Consciente</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="imagenes/logo-header.png" alt="Planeta Vintage">
+            </a>
+            <nav class="nav-desktop">
+                <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+                <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+                <a href="hombre.html" class="btn-menu">HOMBRE</a>
+                <a href="mujer.html" class="btn-menu">MUJER</a>
+            </nav>
+            <button class="menu-mobile" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <a href="nosotros.html" class="btn-menu">NOSOTROS</a>
+            <a href="destacados.html" class="btn-menu">DESTACADOS</a>
+            <a href="hombre.html" class="btn-menu">HOMBRE</a>
+            <a href="mujer.html" class="btn-menu">MUJER</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="imagenes/planeta-vintage-logo.png" alt="Planeta Vintage" class="hero-logo">
+            <img src="imagenes/smiley-face.png" alt="Smiley" class="smiley-decoration">
+            <img src="imagenes/laptop-hands.png" alt="Laptop" class="laptop-decoration">
+        </div>
+    </section>
+
+    <!-- INICIO Button -->
+    <div class="inicio-section">
+        <button class="inicio-btn">INICIO</button>
+    </div>
+
+    <!-- Colecciones Section -->
+    <section class="colecciones-section">
+        <h2 class="section-title-white">COLECCIONES</h2>
+        <div class="collection-grid">
+            <a href="hombre.html" class="collection-card yellow-shadow">
+                <img src="imagenes/hombre-vintage.png" alt="Colección Hombre">
+                <span class="collection-label">HOMBRE</span>
+            </a>
+            <a href="mujer.html" class="collection-card orange-shadow">
+                <img src="imagenes/mujer-vintage.png" alt="Colección Mujer">
+                <span class="collection-label">MUJER</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Destacados Section -->
+    <section class="destacados-section">
+        <h2 class="section-title">DESTACADOS</h2>
+        <div class="products-grid">
+            <a href="producto.html?id=1" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/overall-cargo-1.webp" alt="Overall tipo cargo">
+                </div>
+                <h3 class="product-name">Overall tipo cargo</h3>
+            </a>
+            <a href="producto.html?id=2" class="product-card">
+                <div class="product-image green-shadow">
+                    <img src="imagenes/gorra-customizada.webp" alt="Gorra customizada">
+                </div>
+                <h3 class="product-name">Gorra customizada</h3>
+            </a>
+            <a href="producto.html?id=3" class="product-card">
+                <div class="product-image yellow-shadow">
+                    <img src="imagenes/chaqueta-crema-1.png" alt="Chaqueta crema clásica">
+                </div>
+                <h3 class="product-name">Chaqueta crema clásica</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p class="testimonial-name">CRISTIAN OSORIO - ⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"La ropa está increíble. Calidad, estilo y comodidad en cada prenda. ¡Definitivamente volveré!"</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-name">MARIA FER ARDILA - ⭐⭐⭐⭐⭐</p>
+                <p class="testimonial-text">"Muy buena calidad y diseño. Todo llegó en buen estado y se ve genial. Solo mejoraría un poco los tiempos de entrega."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="imagenes/globe-icon.png" alt="Globe" class="globe-decoration">
+            <div class="footer-info">
+                <div class="divider-line"></div>
+                <div class="contact-info">
+                    <h3 class="footer-title">Contacto</h3>
+                    <p>planetavintage.co</p>
+                    <p>+57 324 596 1367</p>
+                    <p>Cra. 84 #17 - 42, Engativá</p>
+                    <div class="social-icons">
+                        <img src="imagenes/tiktok-icon.png" alt="TikTok">
+                        <img src="imagenes/instagram-icon.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                2025 CREADO POR PLANETA VINTAGE
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
